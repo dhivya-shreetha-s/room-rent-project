@@ -2,6 +2,12 @@ import { Star, MapPin, Wifi, UtensilsCrossed } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import hotel1 from "@/assets/hotel-1.jpg";
+import hotel2 from "@/assets/hotel-2.jpg";
+import hotel3 from "@/assets/hotel-3.jpg";
+import hotel4 from "@/assets/hotel-4.jpg";
+import hotel5 from "@/assets/hotel-5.jpg";
+import hotel6 from "@/assets/hotel-6.jpg";
 
 interface Property {
   id: string;
@@ -18,9 +24,13 @@ interface Property {
 
 interface PropertyCardProps {
   property: Property;
+  index?: number;
 }
 
-export const PropertyCard = ({ property }: PropertyCardProps) => {
+export const PropertyCard = ({ property, index = 0 }: PropertyCardProps) => {
+  const hotelImages = [hotel1, hotel2, hotel3, hotel4, hotel5, hotel6];
+  const propertyImage = property.image_url || hotelImages[index % hotelImages.length];
+  
   const getAmenityIcon = (amenity: string) => {
     if (amenity.toLowerCase().includes('wifi')) return <Wifi className="h-4 w-4" />;
     if (amenity.toLowerCase().includes('restaurant')) return <UtensilsCrossed className="h-4 w-4" />;
@@ -30,17 +40,11 @@ export const PropertyCard = ({ property }: PropertyCardProps) => {
   return (
     <Card className="overflow-hidden hover:shadow-[var(--shadow-hover)] transition-all duration-300 cursor-pointer group">
       <div className="relative h-48 overflow-hidden bg-muted">
-        {property.image_url ? (
-          <img
-            src={property.image_url}
-            alt={property.name}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-accent/20">
-            <span className="text-4xl">🏨</span>
-          </div>
-        )}
+        <img
+          src={propertyImage}
+          alt={property.name}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+        />
         <Badge className="absolute top-3 right-3 bg-card/90 text-foreground border-border">
           {property.property_type}
         </Badge>
