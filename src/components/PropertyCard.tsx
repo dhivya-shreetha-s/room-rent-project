@@ -8,6 +8,12 @@ import hotel3 from "@/assets/hotel-3.jpg";
 import hotel4 from "@/assets/hotel-4.jpg";
 import hotel5 from "@/assets/hotel-5.jpg";
 import hotel6 from "@/assets/hotel-6.jpg";
+import hotel7 from "@/assets/hotel-7.jpg";
+import hotel8 from "@/assets/hotel-8.jpg";
+import hotel9 from "@/assets/hotel-9.jpg";
+import hotel10 from "@/assets/hotel-10.jpg";
+import hotel11 from "@/assets/hotel-11.jpg";
+import hotel12 from "@/assets/hotel-12.jpg";
 
 interface Property {
   id: string;
@@ -28,7 +34,7 @@ interface PropertyCardProps {
 }
 
 export const PropertyCard = ({ property, index = 0 }: PropertyCardProps) => {
-  const hotelImages = [hotel1, hotel2, hotel3, hotel4, hotel5, hotel6];
+  const hotelImages = [hotel1, hotel2, hotel3, hotel4, hotel5, hotel6, hotel7, hotel8, hotel9, hotel10, hotel11, hotel12];
   const propertyImage = property.image_url || hotelImages[index % hotelImages.length];
   
   const getAmenityIcon = (amenity: string) => {
