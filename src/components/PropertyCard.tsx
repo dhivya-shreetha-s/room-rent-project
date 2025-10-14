@@ -1,4 +1,5 @@
 import { Star, MapPin, Wifi, UtensilsCrossed } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -34,6 +35,7 @@ interface PropertyCardProps {
 }
 
 export const PropertyCard = ({ property, index = 0 }: PropertyCardProps) => {
+  const navigate = useNavigate();
   const hotelImages = [hotel1, hotel2, hotel3, hotel4, hotel5, hotel6, hotel7, hotel8, hotel9, hotel10, hotel11, hotel12];
   const propertyImage = property.image_url || hotelImages[index % hotelImages.length];
   
@@ -43,8 +45,14 @@ export const PropertyCard = ({ property, index = 0 }: PropertyCardProps) => {
     return null;
   };
 
+  const handleBookNow = () => {
+    navigate("/booking-details", {
+      state: { property, index }
+    });
+  };
+
   return (
-    <Card className="overflow-hidden hover:shadow-[var(--shadow-hover)] transition-all duration-300 cursor-pointer group">
+    <Card className="overflow-hidden hover:shadow-hover transition-all duration-300 cursor-pointer group animate-fade-in">
       <div className="relative h-48 overflow-hidden bg-muted">
         <img
           src={propertyImage}
@@ -95,7 +103,7 @@ export const PropertyCard = ({ property, index = 0 }: PropertyCardProps) => {
             </span>
             <span className="text-sm text-muted-foreground"> / night</span>
           </div>
-          <Button size="sm" className="bg-primary hover:bg-primary/90">
+          <Button size="sm" onClick={handleBookNow}>
             Book Now
           </Button>
         </div>
