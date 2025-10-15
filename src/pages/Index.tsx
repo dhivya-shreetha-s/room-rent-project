@@ -92,7 +92,7 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Hotel className="h-12 w-12" />
-            <h1 className="text-5xl md:text-6xl font-bold">Elite Heaven</h1>
+            <h1 className="text-5xl md:text-6xl font-bold">StayBook</h1>
           </div>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             Discover amazing hotels and experiences across India
@@ -143,7 +143,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
             <Hotel className="h-5 w-5" />
-            <span>© 2025 Elite Heaven. All rights reserved.</span>
+            <span>© 2025 StayBook. All rights reserved.</span>
           </div>
         </div>
       </footer>
