@@ -16,9 +16,9 @@ React, TypeScript, Vite, Tailwind CSS, ShadCN UI, Supabase.
 
 **Technologies Used**
 
-#React# – Frontend library for building the user interface.
+React – Frontend library for building the user interface.
 
-*TypeScript*– Provides type safety and better maintainability.
+TypeScript– Provides type safety and better maintainability.
 
 Vite – Development tool for fast builds and live reload.
 
@@ -32,31 +32,31 @@ Supabase – Backend-as-a-Service platform for authentication and database manag
 
 Before running the project, ensure the following are installed on your system:
 
-Node.js (v16 or above)
+-Node.js (v16 or above)
 
-npm (Node Package Manager)
+-npm (Node Package Manager)
 
-Git
+-Git
 
 **Follow these steps:**
 
 
-# Step 1: Clone the repository using the project's Git URL.
+ Step 1: Clone the repository using the project's Git URL.
 ```sh
 git clone <YOUR_GIT_URL>
 ```
 
-# Step 2: Navigate to the project directory.
+ Step 2: Navigate to the project directory.
 ```sh
 cd <YOUR_PROJECT_NAME>
 ```
 
-# Step 3: Install the necessary dependencies.
+ Step 3: Install the necessary dependencies.
 ```sh
 npm i
 ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+ Step 4: Start the development server with auto-reloading and an instant preview.
 ```sh
 npm run dev
 ```
