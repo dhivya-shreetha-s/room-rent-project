@@ -1,26 +1,41 @@
-# Welcome to your Lovable project
+# Hotel Room Reservation System
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/74b713e4-9a66-4cb9-b240-86fb8964056d
+The Hotel Room Reservation System is a web-based application designed to simplify and automate the hotel booking process. It provides an interactive and user-friendly interface for guests to browse available rooms, make reservations, and for hotel managers to manage room inventory and bookings efficiently.
 
-## How can I edit this code?
+## Project Information
 
-There are several ways of editing your application.
+**Live Demo:**
 
-**Use Lovable**
+https://lovable.dev/projects/74b713e4-9a66-4cb9-b240-86fb8964056d
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/74b713e4-9a66-4cb9-b240-86fb8964056d) and start prompting.
+**Tech Stack:**
+React, TypeScript, Vite, Tailwind CSS, ShadCN UI, Supabase.
 
-Changes made via Lovable will be committed automatically to this repo.
+##Technologies Used##
+React – Frontend library for building the user interface.
 
-**Use your preferred IDE**
+TypeScript – Provides type safety and better maintainability.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Vite – Development tool for fast builds and live reload.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Tailwind CSS – Utility-first CSS framework for responsive design.
 
-Follow these steps:
+ShadCN UI – Pre-styled, modern UI components.
+
+Supabase – Backend-as-a-Service platform for authentication and database management.
+
+##System Requirements##
+Before running the project, ensure the following are installed on your system:
+
+Node.js (v16 or above)
+
+npm (Node Package Manager)
+
+Git
+
+##Follow these steps:##
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
@@ -36,38 +51,51 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+**Editing the Project**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+#Option 1: Using Your IDE
 
-**Use GitHub Codespaces**
+-Open the project folder in your preferred IDE (e.g., Visual Studio Code).
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+-Modify the source files under the src directory as required.
 
-## What technologies are used for this project?
+-Save your changes — the development server will automatically reload to reflect updates.
 
-This project is built with:
+#Option 2: Edit Files Directly on GitHub
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+-Open your GitHub repository.
 
-## How can I deploy this project?
+-Navigate to the file you want to edit.
 
-Simply open [Lovable](https://lovable.dev/projects/74b713e4-9a66-4cb9-b240-86fb8964056d) and click on Share -> Publish.
+-Click the Edit (✏️) button on the top-right corner.
 
-## Can I connect a custom domain to my Lovable project?
+-Make your changes and commit them to the repository.
 
-Yes, you can!
+#Option 3: Using GitHub Codespaces
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+-Go to your GitHub repository main page.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+-Click Code → Codespaces → New Codespace.
+
+-This launches a development environment in your browser.
+
+-Edit, preview, and commit changes directly within the Codespace.
+
+## Deployment
+
+This project can be deployed using Netlify or any static hosting service that supports Vite-based React applications.
+
+## Steps to Deploy on Netlify:
+-Log in to https://www.netlify.com
+
+-Click Add New Site → Import from Git.
+
+-Connect your GitHub account and select your repository.
+
+-Set the build command as npm run build and the publish directory as dist.
+
+-Click Deploy Site.
+
+-After deployment, you can connect your custom domain under:
+
+-Site Settings → Domain Management → Add Custom Domain
