@@ -11,12 +11,14 @@ The Hotel Room Reservation System is a web-based application designed to simplif
 https://lovable.dev/projects/74b713e4-9a66-4cb9-b240-86fb8964056d
 
 **Tech Stack:**
+
 React, TypeScript, Vite, Tailwind CSS, ShadCN UI, Supabase.
 
-##Technologies Used##
-React – Frontend library for building the user interface.
+**Technologies Used**
 
-TypeScript – Provides type safety and better maintainability.
+#React# – Frontend library for building the user interface.
+
+*TypeScript*– Provides type safety and better maintainability.
 
 Vite – Development tool for fast builds and live reload.
 
@@ -26,7 +28,7 @@ ShadCN UI – Pre-styled, modern UI components.
 
 Supabase – Backend-as-a-Service platform for authentication and database management.
 
-##System Requirements##
+**System Requirements**
 Before running the project, ensure the following are installed on your system:
 
 Node.js (v16 or above)
@@ -35,25 +37,28 @@ npm (Node Package Manager)
 
 Git
 
-##Follow these steps:##
+**Follow these steps:**
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
+```
+```sh
 # Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
-
+```
+```sh
 # Step 3: Install the necessary dependencies.
 npm i
-
+```
+```sh
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
 **Editing the Project**
 
-#Option 1: Using Your IDE
+#Option 1:Using Your IDE
 
 -Open the project folder in your preferred IDE (e.g., Visual Studio Code).
 
